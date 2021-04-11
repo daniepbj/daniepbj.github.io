@@ -1,0 +1,2151 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #252525;
+  font-family: "Poppins", sans-serif;
+}
+
+* html {
+  height: 100%;
+}
+
+* body {
+  width: 100%;
+  overflow: hidden;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 200px auto;
+      grid-template-rows: 200px auto;
+  background-color: #e9f5db;
+  -webkit-animation-name: backgroundColorSummer, backgroundColorAutumn, backgroundColorWinter;
+          animation-name: backgroundColorSummer, backgroundColorAutumn, backgroundColorWinter;
+  -webkit-animation-delay: 13s, 26s, 39s;
+          animation-delay: 13s, 26s, 39s;
+  -webkit-animation-duration: 2s, 2s, 2s;
+          animation-duration: 2s, 2s, 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.scene .assets--container {
+  position: absolute;
+  left: 50%;
+  bottom: 100px;
+  z-index: 10;
+}
+
+.scene .assets--container img {
+  width: 100px;
+  position: absolute;
+}
+
+.scene .assets--container .trees img {
+  width: 200px;
+  bottom: 20px;
+  left: calc(50% - 100px);
+  z-index: -1;
+}
+
+.scene .assets--container .trees #tree1-spring, .scene .assets--container .trees #tree1-summer, .scene .assets--container .trees #tree1-autumn, .scene .assets--container .trees #tree1-winter {
+  left: calc(50% - 400px);
+  -webkit-animation-name: assetOpacityDown;
+          animation-name: assetOpacityDown;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 15s;
+          animation-delay: 15s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.scene .assets--container .trees #tree2-spring {
+  -webkit-animation-name: assetOpacityDown;
+          animation-name: assetOpacityDown;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 15s;
+          animation-delay: 15s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.scene .assets--container .trees #tree3-spring, .scene .assets--container .trees #tree3-summer, .scene .assets--container .trees #tree3-autumn, .scene .assets--container .trees #tree3-winter {
+  left: calc(50% + 200px);
+  -webkit-animation-name: assetOpacityDown;
+          animation-name: assetOpacityDown;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 15s;
+          animation-delay: 15s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.scene .assets--container .trees #tree1-summer {
+  opacity: 0;
+  -webkit-animation-name: assetOpacity, assetOpacityDown;
+          animation-name: assetOpacity, assetOpacityDown;
+  -webkit-animation-duration: 2s, 1s;
+          animation-duration: 2s, 1s;
+  -webkit-animation-delay: 13s, 28s;
+          animation-delay: 13s, 28s;
+  -webkit-animation-fill-mode: forwards, forwards;
+          animation-fill-mode: forwards, forwards;
+}
+
+.scene .assets--container .trees #tree2-summer {
+  opacity: 0;
+  -webkit-animation-name: assetOpacity, assetOpacityDown;
+          animation-name: assetOpacity, assetOpacityDown;
+  -webkit-animation-duration: 2s, 1s;
+          animation-duration: 2s, 1s;
+  -webkit-animation-delay: 13s, 28s;
+          animation-delay: 13s, 28s;
+  -webkit-animation-fill-mode: forwards, forwards;
+          animation-fill-mode: forwards, forwards;
+}
+
+.scene .assets--container .trees #tree3-summer {
+  opacity: 0;
+  -webkit-animation-name: assetOpacity, assetOpacityDown;
+          animation-name: assetOpacity, assetOpacityDown;
+  -webkit-animation-duration: 2s, 1s;
+          animation-duration: 2s, 1s;
+  -webkit-animation-delay: 13s, 28s;
+          animation-delay: 13s, 28s;
+  -webkit-animation-fill-mode: forwards, forwards;
+          animation-fill-mode: forwards, forwards;
+}
+
+.scene .assets--container .trees #tree1-autumn {
+  opacity: 0;
+  -webkit-animation-name: assetOpacity, assetOpacityDown;
+          animation-name: assetOpacity, assetOpacityDown;
+  -webkit-animation-duration: 2s, 1s;
+          animation-duration: 2s, 1s;
+  -webkit-animation-delay: 26s, 41s;
+          animation-delay: 26s, 41s;
+  -webkit-animation-fill-mode: forwards, forwards;
+          animation-fill-mode: forwards, forwards;
+}
+
+.scene .assets--container .trees #tree2-autumn {
+  opacity: 0;
+  -webkit-animation-name: assetOpacity, assetOpacityDown;
+          animation-name: assetOpacity, assetOpacityDown;
+  -webkit-animation-duration: 2s, 1s;
+          animation-duration: 2s, 1s;
+  -webkit-animation-delay: 26s, 41s;
+          animation-delay: 26s, 41s;
+  -webkit-animation-fill-mode: forwards, forwards;
+          animation-fill-mode: forwards, forwards;
+}
+
+.scene .assets--container .trees #tree3-autumn {
+  opacity: 0;
+  -webkit-animation-name: assetOpacity, assetOpacityDown;
+          animation-name: assetOpacity, assetOpacityDown;
+  -webkit-animation-duration: 2s, 1s;
+          animation-duration: 2s, 1s;
+  -webkit-animation-delay: 26s, 41s;
+          animation-delay: 26s, 41s;
+  -webkit-animation-fill-mode: forwards, forwards;
+          animation-fill-mode: forwards, forwards;
+}
+
+.scene .assets--container .trees #tree1-winter {
+  opacity: 0;
+  -webkit-animation-name: assetOpacity;
+          animation-name: assetOpacity;
+  -webkit-animation-delay: 13s;
+          animation-delay: 13s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 39s;
+          animation-delay: 39s;
+}
+
+.scene .assets--container .trees #tree2-winter {
+  opacity: 0;
+  -webkit-animation-name: assetOpacity;
+          animation-name: assetOpacity;
+  -webkit-animation-delay: 13s;
+          animation-delay: 13s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 39s;
+          animation-delay: 39s;
+}
+
+.scene .assets--container .trees #tree3-winter {
+  opacity: 0;
+  -webkit-animation-name: assetOpacity;
+          animation-name: assetOpacity;
+  -webkit-animation-delay: 13s;
+          animation-delay: 13s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 39s;
+          animation-delay: 39s;
+}
+
+.scene .assets--container .hills img {
+  width: 500px;
+  bottom: -270px;
+  left: calc(50% - 250px);
+  z-index: -2;
+  -webkit-animation-name: hills;
+          animation-name: hills;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-animation-delay: 9s;
+          animation-delay: 9s;
+}
+
+.scene .assets--container .hills #hill1-spring {
+  left: calc(50% - 450px);
+  -webkit-animation-name: hills, assetOpacityDown;
+          animation-name: hills, assetOpacityDown;
+  -webkit-animation-duration: 2s, 1s;
+          animation-duration: 2s, 1s;
+  -webkit-animation-delay: 9.25s, 15s;
+          animation-delay: 9.25s, 15s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.scene .assets--container .hills #hill3-spring {
+  z-index: -3;
+  -webkit-animation-name: hills, assetOpacityDown;
+          animation-name: hills, assetOpacityDown;
+  -webkit-animation-duration: 2s, 1s;
+          animation-duration: 2s, 1s;
+  -webkit-animation-delay: 9s, 15s;
+          animation-delay: 9s, 15s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.scene .assets--container .hills #hill2-spring {
+  left: calc(50% - 50px);
+  -webkit-animation-name: hills, assetOpacityDown;
+          animation-name: hills, assetOpacityDown;
+  -webkit-animation-duration: 2s, 1s;
+          animation-duration: 2s, 1s;
+  -webkit-animation-delay: 9.5s, 15s;
+          animation-delay: 9.5s, 15s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.scene .assets--container .hills #hill1-summer {
+  left: calc(50% - 450px);
+  opacity: 0;
+  -webkit-animation-name: hills, assetOpacity, assetOpacityDown;
+          animation-name: hills, assetOpacity, assetOpacityDown;
+  -webkit-animation-duration: 2s, 2s, 1s;
+          animation-duration: 2s, 2s, 1s;
+  -webkit-animation-delay: 9.25s, 13s, 28s;
+          animation-delay: 9.25s, 13s, 28s;
+  -webkit-transition-timing-function: ease-out, linear;
+          transition-timing-function: ease-out, linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.scene .assets--container .hills #hill2-summer {
+  z-index: -3;
+  opacity: 0;
+  -webkit-animation-name: hills, assetOpacity, assetOpacityDown;
+          animation-name: hills, assetOpacity, assetOpacityDown;
+  -webkit-animation-duration: 2s, 2s, 1s;
+          animation-duration: 2s, 2s, 1s;
+  -webkit-animation-delay: 9s, 13s, 28s;
+          animation-delay: 9s, 13s, 28s;
+  -webkit-transition-timing-function: ease-out, linear;
+          transition-timing-function: ease-out, linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.scene .assets--container .hills #hill3-summer {
+  left: calc(50% - 50px);
+  opacity: 0;
+  -webkit-animation-name: hills, assetOpacity, assetOpacityDown;
+          animation-name: hills, assetOpacity, assetOpacityDown;
+  -webkit-animation-duration: 2s, 2s, 1s;
+          animation-duration: 2s, 2s, 1s;
+  -webkit-animation-delay: 9.5s, 13s, 28s;
+          animation-delay: 9.5s, 13s, 28s;
+  -webkit-transition-timing-function: ease-out, linear;
+          transition-timing-function: ease-out, linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.scene .assets--container .hills #hill1-autumn {
+  left: calc(50% - 450px);
+  opacity: 0;
+  -webkit-animation-name: hills, assetOpacity, assetOpacityDown;
+          animation-name: hills, assetOpacity, assetOpacityDown;
+  -webkit-animation-duration: 2s, 2s, 1s;
+          animation-duration: 2s, 2s, 1s;
+  -webkit-animation-delay: 9.25s, 26s, 41s;
+          animation-delay: 9.25s, 26s, 41s;
+  -webkit-transition-timing-function: ease-out, linear;
+          transition-timing-function: ease-out, linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.scene .assets--container .hills #hill2-autumn {
+  z-index: -3;
+  opacity: 0;
+  -webkit-animation-name: hills, assetOpacity, assetOpacityDown;
+          animation-name: hills, assetOpacity, assetOpacityDown;
+  -webkit-animation-duration: 2s, 2s, 1s;
+          animation-duration: 2s, 2s, 1s;
+  -webkit-animation-delay: 9s, 26s, 41s;
+          animation-delay: 9s, 26s, 41s;
+  -webkit-transition-timing-function: ease-out, linear;
+          transition-timing-function: ease-out, linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.scene .assets--container .hills #hill3-autumn {
+  left: calc(50% - 50px);
+  opacity: 0;
+  -webkit-animation-name: hills, assetOpacity, assetOpacityDown;
+          animation-name: hills, assetOpacity, assetOpacityDown;
+  -webkit-animation-duration: 2s, 2s, 1s;
+          animation-duration: 2s, 2s, 1s;
+  -webkit-animation-delay: 9.5s, 26s, 41s;
+          animation-delay: 9.5s, 26s, 41s;
+  -webkit-transition-timing-function: ease-out, linear;
+          transition-timing-function: ease-out, linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.scene .assets--container .hills #hill1-winter {
+  left: calc(50% - 450px);
+  opacity: 0;
+  -webkit-animation-name: hills, assetOpacity;
+          animation-name: hills, assetOpacity;
+  -webkit-animation-duration: 2s, 2s;
+          animation-duration: 2s, 2s;
+  -webkit-animation-delay: 9.25s, 39s;
+          animation-delay: 9.25s, 39s;
+  -webkit-transition-timing-function: ease-out, linear;
+          transition-timing-function: ease-out, linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.scene .assets--container .hills #hill2-winter {
+  z-index: -3;
+  opacity: 0;
+  -webkit-animation-name: assetOpacity;
+          animation-name: assetOpacity;
+  -webkit-animation-delay: 13s;
+          animation-delay: 13s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-name: hills, assetOpacity;
+          animation-name: hills, assetOpacity;
+  -webkit-animation-duration: 2s, 2s;
+          animation-duration: 2s, 2s;
+  -webkit-animation-delay: 9s, 39s;
+          animation-delay: 9s, 39s;
+  -webkit-transition-timing-function: ease-out, linear;
+          transition-timing-function: ease-out, linear;
+  animation-fill-mode: forwards;
+}
+
+.scene .assets--container .hills #hill3-winter {
+  left: calc(50% - 50px);
+  opacity: 0;
+  -webkit-animation-name: hills, assetOpacity;
+          animation-name: hills, assetOpacity;
+  -webkit-animation-duration: 2s, 2s;
+          animation-duration: 2s, 2s;
+  -webkit-animation-delay: 9.5s, 39s;
+          animation-delay: 9.5s, 39s;
+  -webkit-transition-timing-function: ease-out, linear;
+          transition-timing-function: ease-out, linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.scene .assets--container #ground-spring, .scene .assets--container #ground-summer, .scene .assets--container #ground-autumn, .scene .assets--container #ground-winter {
+  width: 1000px;
+  left: calc(50% - 500px);
+  z-index: 1;
+  bottom: 0;
+  -webkit-animation-name: assetOpacityDown;
+          animation-name: assetOpacityDown;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 15s;
+          animation-delay: 15s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.scene .assets--container #ground-summer {
+  opacity: 0;
+  -webkit-animation-name: assetOpacity, assetOpacityDown;
+          animation-name: assetOpacity, assetOpacityDown;
+  -webkit-animation-duration: 2s, 1s;
+          animation-duration: 2s, 1s;
+  -webkit-animation-delay: 13s, 28s;
+          animation-delay: 13s, 28s;
+  -webkit-animation-fill-mode: forwards, forwards;
+          animation-fill-mode: forwards, forwards;
+}
+
+.scene .assets--container #ground-autumn {
+  opacity: 0;
+  -webkit-animation-name: assetOpacity, assetOpacityDown;
+          animation-name: assetOpacity, assetOpacityDown;
+  -webkit-animation-duration: 2s, 1s;
+          animation-duration: 2s, 1s;
+  -webkit-animation-delay: 26s, 41s;
+          animation-delay: 26s, 41s;
+  -webkit-animation-fill-mode: forwards, forwards;
+          animation-fill-mode: forwards, forwards;
+}
+
+.scene .assets--container #ground-winter {
+  opacity: 0;
+  -webkit-animation-name: assetOpacity;
+          animation-name: assetOpacity;
+  -webkit-animation-delay: 13s;
+          animation-delay: 13s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 39s;
+          animation-delay: 39s;
+}
+
+.scene .assets--container #daffodil {
+  bottom: -100px;
+  width: 100px;
+  left: calc(50% + 100px);
+  -webkit-animation-name: daffodil, daffodilDown;
+          animation-name: daffodil, daffodilDown;
+  -webkit-animation-duration: 1s, 2s;
+          animation-duration: 1s, 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  -webkit-animation-delay: 5s, 24s;
+          animation-delay: 5s, 24s;
+  z-index: -1;
+}
+
+.scene #bird {
+  width: 100px;
+  bottom: 500px;
+  right: 1300px;
+  -webkit-animation-name: bird, birdOut;
+          animation-name: bird, birdOut;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 15s, 23s;
+          animation-delay: 15s, 23s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+.scene #bee1 {
+  width: 50px;
+  -webkit-animation-name: bee1;
+          animation-name: bee1;
+  -webkit-animation-duration: 13s;
+          animation-duration: 13s;
+  -webkit-animation-delay: 26.5s;
+          animation-delay: 26.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  position: absolute;
+  left: -100px;
+  bottom: 540px;
+}
+
+.scene #bee2 {
+  width: 50px;
+  -webkit-animation-name: bee2;
+          animation-name: bee2;
+  -webkit-animation-duration: 11s;
+          animation-duration: 11s;
+  -webkit-animation-delay: 27.5s;
+          animation-delay: 27.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  position: absolute;
+  left: -100px;
+  bottom: 600px;
+}
+
+.scene #bee3 {
+  width: 50px;
+  -webkit-animation-name: bee3;
+          animation-name: bee3;
+  -webkit-animation-duration: 12s;
+          animation-duration: 12s;
+  -webkit-animation-delay: 27s;
+          animation-delay: 27s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  position: absolute;
+  left: -100px;
+  bottom: 450px;
+}
+
+.scene #sun {
+  width: 500px;
+  left: calc(45% + 50px);
+  -webkit-animation-name: sun, sunDown;
+          animation-name: sun, sunDown;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-animation-delay: 25s, 37s;
+          animation-delay: 25s, 37s;
+  z-index: -1;
+  position: absolute;
+  bottom: -400px;
+}
+
+.scene .leaf1,
+.scene .leaf2,
+.scene .leaf3,
+.scene .leaf4,
+.scene .leaf5,
+.scene .leaf6,
+.scene .leaf7,
+.scene .leaf8,
+.scene .leaf9,
+.scene .leaf10 {
+  padding: 0px 50px 0px 50px;
+  position: absolute;
+  -webkit-animation-name: falling-leaves;
+          animation-name: falling-leaves;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  height: 80px;
+  z-index: 11;
+}
+
+.scene .leaf1 {
+  top: -100px;
+  left: 100px;
+  -webkit-animation-delay: 27.9s;
+          animation-delay: 27.9s;
+}
+
+.scene .leaf2 {
+  top: -100px;
+  left: 50px;
+  -webkit-animation-delay: 30.2s;
+          animation-delay: 30.2s;
+}
+
+.scene .leaf3 {
+  top: -100px;
+  left: 200px;
+  right: 25px;
+  -webkit-animation-delay: 30s;
+          animation-delay: 30s;
+}
+
+.scene .leaf4 {
+  top: -100px;
+  left: 500px;
+  -webkit-animation-delay: 28.3s;
+          animation-delay: 28.3s;
+}
+
+.scene .leaf5 {
+  top: -100px;
+  left: 1800px;
+  -webkit-animation-delay: 29.2s;
+          animation-delay: 29.2s;
+}
+
+.scene .leaf6 {
+  top: -100px;
+  left: 1500px;
+  -webkit-animation-delay: 30.4s;
+          animation-delay: 30.4s;
+}
+
+.scene .leaf7 {
+  top: -100px;
+  left: 900px;
+  -webkit-animation-delay: 30s;
+          animation-delay: 30s;
+}
+
+.scene .leaf8 {
+  top: -100px;
+  left: 300px;
+  -webkit-animation-delay: 32s;
+          animation-delay: 32s;
+}
+
+.scene .leaf9 {
+  top: -100px;
+  left: 1300px;
+  -webkit-animation-delay: 29s;
+          animation-delay: 29s;
+}
+
+.scene .leaf10 {
+  top: -100px;
+  left: 1700px;
+  -webkit-animation-delay: 31s;
+          animation-delay: 31s;
+}
+
+.scene .snowflakes img {
+  padding: 0px 50px 0px 50px;
+  position: absolute;
+  -webkit-animation-name: snowflake;
+          animation-name: snowflake;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  height: 80px;
+  z-index: 11;
+}
+
+.scene .snowflake1 {
+  top: -100px;
+  left: 100px;
+  -webkit-animation-delay: 40.9s;
+          animation-delay: 40.9s;
+}
+
+.scene .snowflake2 {
+  top: -100px;
+  left: 50px;
+  -webkit-animation-delay: 43.2s;
+          animation-delay: 43.2s;
+}
+
+.scene .snowflake3 {
+  top: -100px;
+  left: 200px;
+  right: 25px;
+  -webkit-animation-delay: 42s;
+          animation-delay: 42s;
+}
+
+.scene .snowflake4 {
+  top: -100px;
+  left: 500px;
+  -webkit-animation-delay: 41.3s;
+          animation-delay: 41.3s;
+}
+
+.scene .snowflake5 {
+  top: -100px;
+  left: 1800px;
+  -webkit-animation-delay: 42.2s;
+          animation-delay: 42.2s;
+}
+
+.scene .snowflake6 {
+  top: -100px;
+  left: 1500px;
+  -webkit-animation-delay: 43.4s;
+          animation-delay: 43.4s;
+}
+
+.scene .snowflake7 {
+  top: -100px;
+  left: 900px;
+  -webkit-animation-delay: 43s;
+          animation-delay: 43s;
+}
+
+.scene .snowflake8 {
+  top: -100px;
+  left: 300px;
+  -webkit-animation-delay: 45s;
+          animation-delay: 45s;
+}
+
+.scene .snowflake9 {
+  top: -100px;
+  left: 1300px;
+  -webkit-animation-delay: 42s;
+          animation-delay: 42s;
+}
+
+.scene .snowflake10 {
+  top: -100px;
+  left: 1700px;
+  -webkit-animation-delay: 44s;
+          animation-delay: 44s;
+}
+
+.scene .whiteCircle {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: #fff;
+  position: absolute;
+  right: calc(50% - 5px);
+  top: 350px;
+  -webkit-animation-name: whiteCircle;
+          animation-name: whiteCircle;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-delay: 52s;
+          animation-delay: 52s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  z-index: 12;
+  opacity: 0;
+}
+
+.scene .clip {
+  width: 100%;
+  height: 101px;
+  position: absolute;
+  bottom: 0;
+  background-color: #e9f5db;
+  -webkit-animation-name: backgroundColorSummer, backgroundColorAutumn, backgroundColorWinter;
+          animation-name: backgroundColorSummer, backgroundColorAutumn, backgroundColorWinter;
+  -webkit-animation-delay: 13s, 26s, 39s;
+          animation-delay: 13s, 26s, 39s;
+  -webkit-animation-duration: 2s, 2s, 2s;
+          animation-duration: 2s, 2s, 2s;
+  -webkit-animation-fill-mode: forwards, forwards, forwards;
+          animation-fill-mode: forwards, forwards, forwards;
+  z-index: 10;
+}
+
+.text {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1.5rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  text-align: center;
+  padding: 0 1em;
+}
+
+.text #textFadeIn {
+  -webkit-animation-name: textFadeIn, assetOpacityDown;
+          animation-name: textFadeIn, assetOpacityDown;
+  -webkit-animation-duration: 2s, 2s;
+          animation-duration: 2s, 2s;
+  -webkit-animation-delay: 2s, 11s;
+          animation-delay: 2s, 11s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+  display: inline-block;
+}
+
+.text #textFadeUp {
+  -webkit-animation-name: textFadeUp, assetOpacityDown;
+          animation-name: textFadeUp, assetOpacityDown;
+  -webkit-animation-duration: 2s, 2s;
+          animation-duration: 2s, 2s;
+  -webkit-animation-delay: 7s, 11s;
+          animation-delay: 7s, 11s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  z-index: -1;
+  position: relative;
+  top: 500px;
+  opacity: 0;
+  display: inline-block;
+}
+
+.text #textDance {
+  -webkit-animation-name: textDance, textFadeIn, assetOpacityDown;
+          animation-name: textDance, textFadeIn, assetOpacityDown;
+  -webkit-animation-duration: 1s, 2s, 2s;
+          animation-duration: 1s, 2s, 2s;
+  -webkit-animation-delay: 2s, 14s, 24s;
+          animation-delay: 2s, 14s, 24s;
+  -webkit-animation-iteration-count: infinite, 1, 1;
+          animation-iteration-count: infinite, 1, 1;
+  -webkit-animation-direction: alternate, linear, linear;
+          animation-direction: alternate, linear, linear;
+  -webkit-animation-timing-function: ease-in-out, linear, linear;
+          animation-timing-function: ease-in-out, linear, linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.text #textHeatUp {
+  -webkit-animation-name: color-fade, shake, smelt, textFadeIn, assetOpacityDown;
+          animation-name: color-fade, shake, smelt, textFadeIn, assetOpacityDown;
+  -webkit-animation-delay: 29s, 29s, 34s, 27s, 35s;
+          animation-delay: 29s, 29s, 34s, 27s, 35s;
+  -webkit-animation-duration: 13s, 2s, 4s, 2s, 1s;
+          animation-duration: 13s, 2s, 4s, 2s, 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  opacity: 0;
+  color: #ffe650;
+}
+
+.text #textCool1 {
+  -webkit-animation-name: textFadeIn, assetOpacityDown;
+          animation-name: textFadeIn, assetOpacityDown;
+  -webkit-animation-delay: 40s, 51s;
+          animation-delay: 40s, 51s;
+  -webkit-animation-duration: 2s, 1s;
+          animation-duration: 2s, 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  opacity: 0;
+  color: #0911a0;
+}
+
+.text #textCool2 {
+  -webkit-animation-name: textFadeIn, cool, assetOpacityDown;
+          animation-name: textFadeIn, cool, assetOpacityDown;
+  -webkit-animation-delay: 40s, 42s, 51s;
+          animation-delay: 40s, 42s, 51s;
+  -webkit-animation-duration: 2s, 1.5s, 1s;
+          animation-duration: 2s, 1.5s, 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-in-out, linear;
+          animation-timing-function: ease-in-out, linear;
+  -webkit-animation-iteration-count: 1, infinite;
+          animation-iteration-count: 1, infinite;
+  opacity: 0;
+  color: #0911a0;
+}
+
+.text #textCool3 {
+  -webkit-animation-name: textFadeIn, assetOpacityDown;
+          animation-name: textFadeIn, assetOpacityDown;
+  -webkit-animation-delay: 40s, 51s;
+          animation-delay: 40s, 51s;
+  -webkit-animation-duration: 2s, 1s;
+          animation-duration: 2s, 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  opacity: 0;
+  color: #0911a0;
+}
+
+.text .textCool p {
+  display: inline-block;
+}
+
+.text #textBlowAway {
+  -webkit-animation-name: textFadeIn, blowAway, assetOpacityDown;
+          animation-name: textFadeIn, blowAway, assetOpacityDown;
+  -webkit-animation-delay: 40s, 48s, 51s;
+          animation-delay: 40s, 48s, 51s;
+  -webkit-animation-duration: 2s, 2s, 1s;
+          animation-duration: 2s, 2s, 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  opacity: 0;
+}
+
+.text .textColors {
+  -webkit-animation-name: textFadeIn;
+          animation-name: textFadeIn;
+  -webkit-animation-delay: 27s;
+          animation-delay: 27s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  opacity: 0;
+}
+
+.text .textColors p {
+  display: inline-block;
+}
+
+.text #textColors1,
+.text #textColors2,
+.text #textColors5,
+.text #textColors7 {
+  -webkit-animation-name: fall-down2;
+          animation-name: fall-down2;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
+  -webkit-animation-delay: 37.5s;
+          animation-delay: 37.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  z-index: -1;
+}
+
+.text #textColors3 {
+  -webkit-animation-name: fall-down, yellowFade;
+          animation-name: fall-down, yellowFade;
+  -webkit-animation-duration: 2s, 2s;
+          animation-duration: 2s, 2s;
+  -webkit-animation-delay: 36.5s, 30s;
+          animation-delay: 36.5s, 30s;
+  -webkit-animation-fill-mode: forwards, forwards;
+          animation-fill-mode: forwards, forwards;
+  -webkit-animation-timing-function: ease-in-out, linear;
+          animation-timing-function: ease-in-out, linear;
+  z-index: -1;
+}
+
+.text #textColors4 {
+  -webkit-animation-name: fall-down, redFade;
+          animation-name: fall-down, redFade;
+  -webkit-animation-duration: 2s, 2s;
+          animation-duration: 2s, 2s;
+  -webkit-animation-delay: 36.5s, 30s;
+          animation-delay: 36.5s, 30s;
+  -webkit-animation-fill-mode: forwards, forwards;
+          animation-fill-mode: forwards, forwards;
+  -webkit-animation-timing-function: ease-in-out, linear;
+          animation-timing-function: ease-in-out, linear;
+  z-index: -1;
+}
+
+.text #textColors6 {
+  -webkit-animation-name: fall-down, brownFade;
+          animation-name: fall-down, brownFade;
+  -webkit-animation-duration: 2s, 2s;
+          animation-duration: 2s, 2s;
+  -webkit-animation-delay: 36.5s, 30s;
+          animation-delay: 36.5s, 30s;
+  -webkit-animation-fill-mode: forwards, forwards;
+          animation-fill-mode: forwards, forwards;
+  -webkit-animation-timing-function: ease-in-out, linear;
+          animation-timing-function: ease-in-out, linear;
+  z-index: -1;
+}
+
+.thickWinterDiv {
+  -webkit-animation-name: WinterTextFadeIn;
+          animation-name: WinterTextFadeIn;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 55s;
+          animation-delay: 55s;
+  z-index: 13;
+  opacity: 0;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.lastWinterDiv {
+  -webkit-animation-name: lastWinterDiv;
+          animation-name: lastWinterDiv;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 56s;
+          animation-delay: 56s;
+  z-index: 13;
+  opacity: 0;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.thickWinterDiv p {
+  display: inline-block;
+}
+
+#thickWinter2 {
+  font-weight: 700;
+}
+
+#thickWinter4 {
+  opacity: 30%;
+}
+
+#ending1,
+#ending2,
+#ending3,
+#ending4,
+#ending5 {
+  opacity: 0;
+  position: absolute;
+  right: calc(50% + -250px);
+  width: 500px;
+  -webkit-animation-name: ending-fade;
+          animation-name: ending-fade;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-animation-delay: 60s;
+          animation-delay: 60s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  z-index: 14;
+  text-align: center;
+}
+
+#ending2 {
+  -webkit-animation-delay: 61s;
+          animation-delay: 61s;
+}
+
+#ending3 {
+  -webkit-animation-delay: 62s;
+          animation-delay: 62s;
+}
+
+#ending4 {
+  -webkit-animation-delay: 63s;
+          animation-delay: 63s;
+}
+
+#ending5 {
+  -webkit-animation-delay: 64s;
+          animation-delay: 64s;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+}
+
+#ferdigda {
+  -webkit-animation-name: textFadeIn;
+          animation-name: textFadeIn;
+  -webkit-animation-delay: 65s;
+          animation-delay: 65s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  opacity: 0;
+}
+
+@-webkit-keyframes backgroundColorSummer {
+  100% {
+    background-color: #aaffd1;
+  }
+}
+
+@keyframes backgroundColorSummer {
+  100% {
+    background-color: #aaffd1;
+  }
+}
+
+@-webkit-keyframes backgroundColorAutumn {
+  100% {
+    background-color: #ffefd6;
+  }
+}
+
+@keyframes backgroundColorAutumn {
+  100% {
+    background-color: #ffefd6;
+  }
+}
+
+@-webkit-keyframes backgroundColorWinter {
+  100% {
+    background-color: #ffffff;
+  }
+}
+
+@keyframes backgroundColorWinter {
+  100% {
+    background-color: #ffffff;
+  }
+}
+
+@-webkit-keyframes assetOpacity {
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes assetOpacity {
+  100% {
+    opacity: 100%;
+  }
+}
+
+@-webkit-keyframes assetOpacityDown {
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes assetOpacityDown {
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes hills {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-270px);
+            transform: translateY(-270px);
+  }
+}
+
+@keyframes hills {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-270px);
+            transform: translateY(-270px);
+  }
+}
+
+@-webkit-keyframes daffodil {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-120px);
+            transform: translateY(-120px);
+  }
+}
+
+@keyframes daffodil {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-120px);
+            transform: translateY(-120px);
+  }
+}
+
+@-webkit-keyframes daffodilDown {
+  100% {
+    -webkit-transform: translateY(120px);
+            transform: translateY(120px);
+  }
+}
+
+@keyframes daffodilDown {
+  100% {
+    -webkit-transform: translateY(120px);
+            transform: translateY(120px);
+  }
+}
+
+@-webkit-keyframes bird {
+  0.0000% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+  4.5% {
+    -webkit-transform: translate(46px, 37px);
+            transform: translate(46px, 37px);
+  }
+  9% {
+    -webkit-transform: translate(92px, 70px);
+            transform: translate(92px, 70px);
+  }
+  13.5% {
+    -webkit-transform: translate(138px, 100px);
+            transform: translate(138px, 100px);
+  }
+  18% {
+    -webkit-transform: translate(184px, 126px);
+            transform: translate(184px, 126px);
+  }
+  22.5% {
+    -webkit-transform: translate(230px, 148px);
+            transform: translate(230px, 148px);
+  }
+  27% {
+    -webkit-transform: translate(276px, 167px);
+            transform: translate(276px, 167px);
+  }
+  31.5% {
+    -webkit-transform: translate(322px, 183px);
+            transform: translate(322px, 183px);
+  }
+  36% {
+    -webkit-transform: translate(368px, 197px);
+            transform: translate(368px, 197px);
+  }
+  40.5% {
+    -webkit-transform: translate(414px, 207px);
+            transform: translate(414px, 207px);
+  }
+  45% {
+    -webkit-transform: translate(460px, 215px);
+            transform: translate(460px, 215px);
+  }
+  49.5% {
+    -webkit-transform: translate(506px, 221px);
+            transform: translate(506px, 221px);
+  }
+  54% {
+    -webkit-transform: translate(552px, 228px);
+            transform: translate(552px, 228px);
+  }
+  58.5% {
+    -webkit-transform: translate(598px, 227px);
+            transform: translate(598px, 227px);
+  }
+  63% {
+    -webkit-transform: translate(644px, 222px);
+            transform: translate(644px, 222px);
+  }
+  67.5% {
+    -webkit-transform: translate(690px, 214px);
+            transform: translate(690px, 214px);
+  }
+  72% {
+    -webkit-transform: translate(736px, 194px);
+            transform: translate(736px, 194px);
+  }
+  76.5% {
+    -webkit-transform: translate(782px, 187px);
+            transform: translate(782px, 187px);
+  }
+  81% {
+    -webkit-transform: translate(828px, 184px);
+            transform: translate(828px, 184px);
+  }
+  85.5% {
+    -webkit-transform: translate(874px, 186px);
+            transform: translate(874px, 186px);
+  }
+  90% {
+    -webkit-transform: translate(920px, 189px);
+            transform: translate(920px, 189px);
+  }
+  95% {
+    -webkit-transform: translate(966px, 196px);
+            transform: translate(966px, 196px);
+  }
+  100.0000% {
+    -webkit-transform: translate(1021px, 201px);
+            transform: translate(1021px, 201px);
+  }
+}
+
+@keyframes bird {
+  0.0000% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+  4.5% {
+    -webkit-transform: translate(46px, 37px);
+            transform: translate(46px, 37px);
+  }
+  9% {
+    -webkit-transform: translate(92px, 70px);
+            transform: translate(92px, 70px);
+  }
+  13.5% {
+    -webkit-transform: translate(138px, 100px);
+            transform: translate(138px, 100px);
+  }
+  18% {
+    -webkit-transform: translate(184px, 126px);
+            transform: translate(184px, 126px);
+  }
+  22.5% {
+    -webkit-transform: translate(230px, 148px);
+            transform: translate(230px, 148px);
+  }
+  27% {
+    -webkit-transform: translate(276px, 167px);
+            transform: translate(276px, 167px);
+  }
+  31.5% {
+    -webkit-transform: translate(322px, 183px);
+            transform: translate(322px, 183px);
+  }
+  36% {
+    -webkit-transform: translate(368px, 197px);
+            transform: translate(368px, 197px);
+  }
+  40.5% {
+    -webkit-transform: translate(414px, 207px);
+            transform: translate(414px, 207px);
+  }
+  45% {
+    -webkit-transform: translate(460px, 215px);
+            transform: translate(460px, 215px);
+  }
+  49.5% {
+    -webkit-transform: translate(506px, 221px);
+            transform: translate(506px, 221px);
+  }
+  54% {
+    -webkit-transform: translate(552px, 228px);
+            transform: translate(552px, 228px);
+  }
+  58.5% {
+    -webkit-transform: translate(598px, 227px);
+            transform: translate(598px, 227px);
+  }
+  63% {
+    -webkit-transform: translate(644px, 222px);
+            transform: translate(644px, 222px);
+  }
+  67.5% {
+    -webkit-transform: translate(690px, 214px);
+            transform: translate(690px, 214px);
+  }
+  72% {
+    -webkit-transform: translate(736px, 194px);
+            transform: translate(736px, 194px);
+  }
+  76.5% {
+    -webkit-transform: translate(782px, 187px);
+            transform: translate(782px, 187px);
+  }
+  81% {
+    -webkit-transform: translate(828px, 184px);
+            transform: translate(828px, 184px);
+  }
+  85.5% {
+    -webkit-transform: translate(874px, 186px);
+            transform: translate(874px, 186px);
+  }
+  90% {
+    -webkit-transform: translate(920px, 189px);
+            transform: translate(920px, 189px);
+  }
+  95% {
+    -webkit-transform: translate(966px, 196px);
+            transform: translate(966px, 196px);
+  }
+  100.0000% {
+    -webkit-transform: translate(1021px, 201px);
+            transform: translate(1021px, 201px);
+  }
+}
+
+@-webkit-keyframes birdOut {
+  0% {
+    -webkit-transform: translate(1021px, 201px);
+            transform: translate(1021px, 201px);
+  }
+  100% {
+    -webkit-transform: translate(3000px, 0px);
+            transform: translate(3000px, 0px);
+  }
+}
+
+@keyframes birdOut {
+  0% {
+    -webkit-transform: translate(1021px, 201px);
+            transform: translate(1021px, 201px);
+  }
+  100% {
+    -webkit-transform: translate(3000px, 0px);
+            transform: translate(3000px, 0px);
+  }
+}
+
+@-webkit-keyframes textFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes textFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@-webkit-keyframes textFadeUp {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(-500px);
+            transform: translateY(-500px);
+    opacity: 100%;
+  }
+}
+
+@keyframes textFadeUp {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(-500px);
+            transform: translateY(-500px);
+    opacity: 100%;
+  }
+}
+
+@-webkit-keyframes textDance {
+  0% {
+    -webkit-transform: skew(30deg);
+            transform: skew(30deg);
+  }
+  50% {
+    -webkit-transform: skew(-30deg);
+            transform: skew(-30deg);
+  }
+  100% {
+    -webkit-transform: skew(30deg);
+            transform: skew(30deg);
+  }
+}
+
+@keyframes textDance {
+  0% {
+    -webkit-transform: skew(30deg);
+            transform: skew(30deg);
+  }
+  50% {
+    -webkit-transform: skew(-30deg);
+            transform: skew(-30deg);
+  }
+  100% {
+    -webkit-transform: skew(30deg);
+            transform: skew(30deg);
+  }
+}
+
+@-webkit-keyframes color-fade {
+  0% {
+    color: #d1f767;
+  }
+  50% {
+    color: #e64a42;
+  }
+  100% {
+    color: #ad0023;
+  }
+}
+
+@keyframes color-fade {
+  0% {
+    color: #d1f767;
+  }
+  50% {
+    color: #e64a42;
+  }
+  100% {
+    color: #ad0023;
+  }
+}
+
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: skewX(-15deg);
+            transform: skewX(-15deg);
+  }
+  5% {
+    -webkit-transform: skewX(15deg);
+            transform: skewX(15deg);
+  }
+  10% {
+    -webkit-transform: skewX(-15deg);
+            transform: skewX(-15deg);
+  }
+  15% {
+    -webkit-transform: skewX(15deg);
+            transform: skewX(15deg);
+  }
+  20% {
+    -webkit-transform: skewX(0deg);
+            transform: skewX(0deg);
+  }
+  100% {
+    -webkit-transform: skewX(0deg);
+            transform: skewX(0deg);
+  }
+}
+
+@keyframes shake {
+  0% {
+    -webkit-transform: skewX(-15deg);
+            transform: skewX(-15deg);
+  }
+  5% {
+    -webkit-transform: skewX(15deg);
+            transform: skewX(15deg);
+  }
+  10% {
+    -webkit-transform: skewX(-15deg);
+            transform: skewX(-15deg);
+  }
+  15% {
+    -webkit-transform: skewX(15deg);
+            transform: skewX(15deg);
+  }
+  20% {
+    -webkit-transform: skewX(0deg);
+            transform: skewX(0deg);
+  }
+  100% {
+    -webkit-transform: skewX(0deg);
+            transform: skewX(0deg);
+  }
+}
+
+@-webkit-keyframes smelt {
+  0% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 100%;
+  }
+  100% {
+    -webkit-transform: scaleY(4);
+            transform: scaleY(4);
+    -webkit-filter: blur(8px);
+            filter: blur(8px);
+    opacity: 0;
+  }
+}
+
+@keyframes smelt {
+  0% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 100%;
+  }
+  100% {
+    -webkit-transform: scaleY(4);
+            transform: scaleY(4);
+    -webkit-filter: blur(8px);
+            filter: blur(8px);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes yellowFade {
+  0% {
+    color: #252525;
+  }
+  100% {
+    color: #f4ff8c;
+  }
+}
+
+@keyframes yellowFade {
+  0% {
+    color: #252525;
+  }
+  100% {
+    color: #f4ff8c;
+  }
+}
+
+@-webkit-keyframes redFade {
+  0% {
+    color: #252525;
+  }
+  100% {
+    color: red;
+  }
+}
+
+@keyframes redFade {
+  0% {
+    color: #252525;
+  }
+  100% {
+    color: red;
+  }
+}
+
+@-webkit-keyframes brownFade {
+  0% {
+    color: #252525;
+  }
+  100% {
+    color: #793d05;
+  }
+}
+
+@keyframes brownFade {
+  0% {
+    color: #252525;
+  }
+  100% {
+    color: #793d05;
+  }
+}
+
+@-webkit-keyframes fall-down {
+  0% {
+    -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+            transform: translateY(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+  20% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(1000px) scaleY(2) scaleX(0.2);
+            transform: translateY(1000px) scaleY(2) scaleX(0.2);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+    -webkit-filter: blur(40px);
+            filter: blur(40px);
+    opacity: 0;
+  }
+}
+
+@keyframes fall-down {
+  0% {
+    -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+            transform: translateY(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+  20% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(1000px) scaleY(2) scaleX(0.2);
+            transform: translateY(1000px) scaleY(2) scaleX(0.2);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+    -webkit-filter: blur(40px);
+            filter: blur(40px);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fall-down2 {
+  0% {
+    -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+            transform: translateY(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+  10% {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+  }
+  100% {
+    -webkit-transform: translateY(1000px) scaleY(2) scaleX(0.2);
+            transform: translateY(1000px) scaleY(2) scaleX(0.2);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+    -webkit-filter: blur(40px);
+            filter: blur(40px);
+    opacity: 0;
+  }
+}
+
+@keyframes fall-down2 {
+  0% {
+    -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+            transform: translateY(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+  10% {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+  }
+  100% {
+    -webkit-transform: translateY(1000px) scaleY(2) scaleX(0.2);
+            transform: translateY(1000px) scaleY(2) scaleX(0.2);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+    -webkit-filter: blur(40px);
+            filter: blur(40px);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes cool {
+  0% {
+    -webkit-transform: skewX(-20deg);
+            transform: skewX(-20deg);
+    color: #6aa3ec;
+  }
+  5% {
+    -webkit-transform: skewX(20deg);
+            transform: skewX(20deg);
+    color: #6aa3ec;
+  }
+  10% {
+    -webkit-transform: skewX(-20deg);
+            transform: skewX(-20deg);
+    color: #6aa3ec;
+  }
+  15% {
+    -webkit-transform: skewX(20deg);
+            transform: skewX(20deg);
+    color: #6aa3ec;
+  }
+  20% {
+    -webkit-transform: skewX(0deg);
+            transform: skewX(0deg);
+    color: #6aa3ec;
+  }
+  100% {
+    -webkit-transform: skewX(-10deg);
+            transform: skewX(-10deg);
+    color: #6aa3ec;
+  }
+}
+
+@keyframes cool {
+  0% {
+    -webkit-transform: skewX(-20deg);
+            transform: skewX(-20deg);
+    color: #6aa3ec;
+  }
+  5% {
+    -webkit-transform: skewX(20deg);
+            transform: skewX(20deg);
+    color: #6aa3ec;
+  }
+  10% {
+    -webkit-transform: skewX(-20deg);
+            transform: skewX(-20deg);
+    color: #6aa3ec;
+  }
+  15% {
+    -webkit-transform: skewX(20deg);
+            transform: skewX(20deg);
+    color: #6aa3ec;
+  }
+  20% {
+    -webkit-transform: skewX(0deg);
+            transform: skewX(0deg);
+    color: #6aa3ec;
+  }
+  100% {
+    -webkit-transform: skewX(-10deg);
+            transform: skewX(-10deg);
+    color: #6aa3ec;
+  }
+}
+
+@-webkit-keyframes blowAway {
+  10% {
+    -webkit-transform: translateX(-20px);
+            transform: translateX(-20px);
+  }
+  100% {
+    -webkit-transform: translateX(2000px);
+            transform: translateX(2000px);
+  }
+}
+
+@keyframes blowAway {
+  10% {
+    -webkit-transform: translateX(-20px);
+            transform: translateX(-20px);
+  }
+  100% {
+    -webkit-transform: translateX(2000px);
+            transform: translateX(2000px);
+  }
+}
+
+@-webkit-keyframes whiteCircle {
+  20% {
+    opacity: 100%;
+  }
+  100% {
+    -webkit-transform: scale(200);
+            transform: scale(200);
+    border-radius: 100%;
+    position: absolute;
+    opacity: 100%;
+  }
+}
+
+@keyframes whiteCircle {
+  20% {
+    opacity: 100%;
+  }
+  100% {
+    -webkit-transform: scale(200);
+            transform: scale(200);
+    border-radius: 100%;
+    position: absolute;
+    opacity: 100%;
+  }
+}
+
+@-webkit-keyframes bee1 {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  100% {
+    -webkit-transform: translateX(4000px);
+            transform: translateX(4000px);
+  }
+}
+
+@keyframes bee1 {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  100% {
+    -webkit-transform: translateX(4000px);
+            transform: translateX(4000px);
+  }
+}
+
+@-webkit-keyframes bee2 {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  100% {
+    -webkit-transform: translateX(4000px);
+            transform: translateX(4000px);
+  }
+}
+
+@keyframes bee2 {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  100% {
+    -webkit-transform: translateX(4000px);
+            transform: translateX(4000px);
+  }
+}
+
+@-webkit-keyframes bee3 {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  100% {
+    -webkit-transform: translateX(4000px);
+            transform: translateX(4000px);
+  }
+}
+
+@keyframes bee3 {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  100% {
+    -webkit-transform: translateX(4000px);
+            transform: translateX(4000px);
+  }
+}
+
+@-webkit-keyframes WinterTextFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes WinterTextFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@-webkit-keyframes lastWinterDiv {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes lastWinterDiv {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@-webkit-keyframes falling-leaves {
+  0% {
+    -webkit-transform: translateY();
+            transform: translateY();
+  }
+  100% {
+    -webkit-transform: translateY(calc(100vh + 100px));
+            transform: translateY(calc(100vh + 100px));
+  }
+}
+
+@keyframes falling-leaves {
+  0% {
+    -webkit-transform: translateY();
+            transform: translateY();
+  }
+  100% {
+    -webkit-transform: translateY(calc(100vh + 100px));
+            transform: translateY(calc(100vh + 100px));
+  }
+}
+
+@-webkit-keyframes snowflake {
+  0% {
+    -webkit-transform: translateY();
+            transform: translateY();
+  }
+  100% {
+    -webkit-transform: translateY(calc(100vh + 100px));
+            transform: translateY(calc(100vh + 100px));
+  }
+}
+
+@keyframes snowflake {
+  0% {
+    -webkit-transform: translateY();
+            transform: translateY();
+  }
+  100% {
+    -webkit-transform: translateY(calc(100vh + 100px));
+            transform: translateY(calc(100vh + 100px));
+  }
+}
+
+@-webkit-keyframes sun {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-1000px);
+            transform: translateY(-1000px);
+  }
+}
+
+@keyframes sun {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-1000px);
+            transform: translateY(-1000px);
+  }
+}
+
+@-webkit-keyframes sunDown {
+  0% {
+    -webkit-transform: translateY(-1000px);
+            transform: translateY(-1000px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes sunDown {
+  0% {
+    -webkit-transform: translateY(-1000px);
+            transform: translateY(-1000px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes ending-fade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes ending-fade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .assets--container {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    position: absolute;
+    left: 50%;
+    bottom: 100px;
+  }
+  .text {
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (max-width: 1100px) and (max-width: 900px) {
+  .assets--container {
+    position: absolute;
+    left: 50%;
+    bottom: 100px;
+    -webkit-transform: scale(0.65);
+            transform: scale(0.65);
+  }
+  .text {
+    font-size: 12pxrem;
+  }
+}
+
+@media only screen and (max-width: 1100px) and (max-width: 700px) {
+  .assets--container {
+    position: absolute;
+    left: 50%;
+    bottom: 100px;
+    -webkit-transform: scale(0.55);
+            transform: scale(0.55);
+  }
+}
+
+@media only screen and (max-width: 1100px) and (max-width: 600px) {
+  .assets--container {
+    position: absolute;
+    left: 50%;
+    bottom: 100px;
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  .text {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 1100px) and (max-width: 520px) {
+  .assets--container {
+    position: absolute;
+    left: 50%;
+    bottom: 100px;
+    -webkit-transform: scale(0.35);
+            transform: scale(0.35);
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,13 @@
+@mixin flexCenter($direction) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+@mixin assetOpacity {
+  animation-name: assetOpacity;
+  animation-delay: 13s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}

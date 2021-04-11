@@ -1,0 +1,446 @@
+// This files stores all the keyframes that keeps track of all movement, fade ins etc.
+@keyframes backgroundColorSummer {
+  100% {
+    background-color: $backgroundSummer;
+  }
+}
+
+@keyframes backgroundColorAutumn {
+  100% {
+    background-color: $backgroundAutumn;
+  }
+}
+
+@keyframes backgroundColorWinter {
+  100% {
+    background-color: $backgroundWinter;
+  }
+}
+
+@keyframes assetOpacity {
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes assetOpacityDown {
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes hills {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-270px);
+  }
+}
+
+@keyframes daffodil {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-120px);
+  }
+}
+
+@keyframes daffodilDown {
+  100% {
+    transform: translateY(120px);
+  }
+}
+
+// Used a generator
+@keyframes bird {
+  0.0000% {
+    transform: translate(0px, 0px);
+  }
+  4.5% {
+    transform: translate(46px, 37px);
+  }
+  9% {
+    transform: translate(92px, 70px);
+  }
+  13.5% {
+    transform: translate(138px, 100px);
+  }
+  18% {
+    transform: translate(184px, 126px);
+  }
+  22.5% {
+    transform: translate(230px, 148px);
+  }
+  27% {
+    transform: translate(276px, 167px);
+  }
+  31.5% {
+    transform: translate(322px, 183px);
+  }
+  36% {
+    transform: translate(368px, 197px);
+  }
+  40.5% {
+    transform: translate(414px, 207px);
+  }
+  45% {
+    transform: translate(460px, 215px);
+  }
+  49.5% {
+    transform: translate(506px, 221px);
+  }
+  54% {
+    transform: translate(552px, 228px);
+  }
+  58.5% {
+    transform: translate(598px, 227px);
+  }
+  63% {
+    transform: translate(644px, 222px);
+  }
+  67.5% {
+    transform: translate(690px, 214px);
+  }
+  72% {
+    transform: translate(736px, 194px);
+  }
+  76.5% {
+    transform: translate(782px, 187px);
+  }
+  81% {
+    transform: translate(828px, 184px);
+  }
+  85.5% {
+    transform: translate(874px, 186px);
+  }
+  90% {
+    transform: translate(920px, 189px);
+  }
+  95% {
+    transform: translate(966px, 196px);
+  }
+  100.0000% {
+    transform: translate(1021px, 201px);
+  }
+}
+
+// Used a generator
+@keyframes birdOut {
+  0% {
+    transform: translate(1021px, 201px);
+  }
+  100% {
+    transform: translate(3000px, 0px);
+  }
+}
+
+@keyframes textFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes textFadeUp {
+  0% {
+    transform: translateY(0);
+  }
+
+  25% {
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(-500px);
+    opacity: 100%;
+  }
+}
+
+@keyframes textDance {
+  0% {
+    transform: skew(30deg);
+  }
+
+  50% {
+    transform: skew(-30deg);
+  }
+
+  100% {
+    transform: skew(30deg);
+  }
+}
+
+@keyframes color-fade {
+  0% {
+    color: #d1f767;
+  }
+
+  50% {
+    color: #e64a42;
+  }
+
+  100% {
+    color: #ad0023;
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: skewX(-15deg);
+  }
+
+  5% {
+    transform: skewX(15deg);
+  }
+
+  10% {
+    transform: skewX(-15deg);
+  }
+
+  15% {
+    transform: skewX(15deg);
+  }
+
+  20% {
+    transform: skewX(0deg);
+  }
+
+  100% {
+    transform: skewX(0deg);
+  }
+}
+
+@keyframes smelt {
+  0% {
+    transform: scaleY(1);
+    filter: blur(0px);
+    opacity: 100%;
+  }
+
+  100% {
+    transform: scaleY(4);
+    filter: blur(8px);
+    opacity: 0;
+  }
+}
+
+@keyframes yellowFade {
+  0% {
+    color: $text;
+  }
+  100% {
+    color: #f4ff8c;
+  }
+}
+
+@keyframes redFade {
+  0% {
+    color: $text;
+  }
+  100% {
+    color: rgb(255, 0, 0);
+  }
+}
+
+@keyframes brownFade {
+  0% {
+    color: $text;
+  }
+  100% {
+    color: rgb(121, 61, 5);
+  }
+}
+
+@keyframes fall-down {
+  0% {
+    transform: translateY(0) scaleY(1) scaleX(1);
+    transform-origin: 50% 50%;
+    filter: blur(0);
+    opacity: 1;
+  }
+
+  20% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(1000px) scaleY(2) scaleX(0.2);
+    transform-origin: 50% 100%;
+    filter: blur(40px);
+    opacity: 0;
+  }
+}
+
+@keyframes fall-down2 {
+  0% {
+    transform: translateY(0) scaleY(1) scaleX(1);
+    transform-origin: 50% 50%;
+    filter: blur(0);
+    opacity: 1;
+  }
+
+  10% {
+    transform: translateY(-50px);
+  }
+
+  100% {
+    transform: translateY(1000px) scaleY(2) scaleX(0.2);
+    transform-origin: 50% 100%;
+    filter: blur(40px);
+    opacity: 0;
+  }
+}
+
+@keyframes cool {
+  0% {
+    transform: skewX(-20deg);
+    color: rgb(106, 163, 236);
+  }
+
+  5% {
+    transform: skewX(20deg);
+    color: rgb(106, 163, 236);
+  }
+
+  10% {
+    transform: skewX(-20deg);
+    color: rgb(106, 163, 236);
+  }
+
+  15% {
+    transform: skewX(20deg);
+    color: rgb(106, 163, 236);
+  }
+
+  20% {
+    transform: skewX(0deg);
+    color: rgb(106, 163, 236);
+  }
+
+  100% {
+    transform: skewX(-10deg);
+    color: rgb(106, 163, 236);
+  }
+}
+
+@keyframes blowAway {
+  10% {
+    transform: translateX(-20px);
+  }
+
+  100% {
+    transform: translateX(2000px);
+  }
+}
+
+@keyframes whiteCircle {
+  20% {
+    opacity: 100%;
+  }
+
+  100% {
+    transform: scale(200);
+    border-radius: 100%;
+    position: absolute;
+    opacity: 100%;
+  }
+}
+
+@keyframes bee1 {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(4000px);
+  }
+}
+@keyframes bee2 {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(4000px);
+  }
+}
+@keyframes bee3 {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(4000px);
+  }
+}
+
+@keyframes WinterTextFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes lastWinterDiv {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes falling-leaves {
+  0% {
+    transform: translateY();
+  }
+
+  100% {
+    transform: translateY(calc(100vh + 100px));
+  }
+}
+
+@keyframes snowflake {
+  0% {
+    transform: translateY();
+  }
+
+  100% {
+    transform: translateY(calc(100vh + 100px));
+  }
+}
+
+@keyframes sun {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-1000px);
+  }
+}
+
+@keyframes sunDown {
+  0% {
+    transform: translateY(-1000px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes ending-fade {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

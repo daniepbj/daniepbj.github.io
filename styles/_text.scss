@@ -1,0 +1,222 @@
+// This document sets properties to the text used in the project.
+
+.text {
+  width: 100%;
+  height: 100%;
+  @include flexCenter(column);
+  font-size: 1.5rem;
+  user-select: none;
+  text-align: center;
+  padding: 0 1em;
+
+  #textFadeIn {
+    animation-name: textFadeIn, assetOpacityDown;
+    animation-duration: 2s, 2s;
+    animation-delay: 2s, 11s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    display: inline-block;
+  }
+
+  #textFadeUp {
+    animation-name: textFadeUp, assetOpacityDown;
+    animation-duration: 2s, 2s;
+    animation-delay: 7s, 11s;
+    animation-fill-mode: forwards;
+    z-index: -1;
+    position: relative;
+    top: 500px;
+    opacity: 0;
+    display: inline-block;
+  }
+
+  #textDance {
+    animation-name: textDance, textFadeIn, assetOpacityDown;
+    animation-duration: 1s, 2s, 2s;
+    animation-delay: 2s, 14s, 24s;
+    animation-iteration-count: infinite, 1, 1;
+    animation-direction: alternate, linear, linear;
+    animation-timing-function: ease-in-out, linear, linear;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+
+  #textHeatUp {
+    animation-name: color-fade, shake, smelt, textFadeIn, assetOpacityDown;
+    animation-delay: 29s, 29s, 34s, 27s, 35s;
+    animation-duration: 13s, 2s, 4s, 2s, 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    opacity: 0;
+    color: #ffe650;
+  }
+
+  #textCool1 {
+    animation-name: textFadeIn, assetOpacityDown;
+    animation-delay: 40s, 51s;
+    animation-duration: 2s, 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    opacity: 0;
+    color: #0911a0;
+  }
+
+  #textCool2 {
+    animation-name: textFadeIn, cool, assetOpacityDown;
+    animation-delay: 40s, 42s, 51s;
+    animation-duration: 2s, 1.5s, 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out, linear;
+    animation-iteration-count: 1, infinite;
+    opacity: 0;
+    color: #0911a0;
+  }
+
+  #textCool3 {
+    animation-name: textFadeIn, assetOpacityDown;
+    animation-delay: 40s, 51s;
+    animation-duration: 2s, 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    opacity: 0;
+    color: #0911a0;
+  }
+
+  .textCool p {
+    display: inline-block;
+  }
+
+  #textBlowAway {
+    animation-name: textFadeIn, blowAway, assetOpacityDown;
+    animation-delay: 40s, 48s, 51s;
+    animation-duration: 2s, 2s, 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    opacity: 0;
+  }
+
+  .textColors {
+    animation-name: textFadeIn;
+    animation-delay: 27s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    opacity: 0;
+  }
+
+  .textColors p {
+    display: inline-block;
+  }
+
+  #textColors1,
+  #textColors2,
+  #textColors5,
+  #textColors7 {
+    animation-name: fall-down2;
+    animation-duration: 2.5s;
+    animation-delay: 37.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    z-index: -1;
+  }
+
+  #textColors3 {
+    animation-name: fall-down, yellowFade;
+    animation-duration: 2s, 2s;
+    animation-delay: 36.5s, 30s;
+    animation-fill-mode: forwards, forwards;
+    animation-timing-function: ease-in-out, linear;
+    z-index: -1;
+  }
+
+  #textColors4 {
+    animation-name: fall-down, redFade;
+    animation-duration: 2s, 2s;
+    animation-delay: 36.5s, 30s;
+    animation-fill-mode: forwards, forwards;
+    animation-timing-function: ease-in-out, linear;
+    z-index: -1;
+  }
+
+  #textColors6 {
+    animation-name: fall-down, brownFade;
+    animation-duration: 2s, 2s;
+    animation-delay: 36.5s, 30s;
+    animation-fill-mode: forwards, forwards;
+    animation-timing-function: ease-in-out, linear;
+    z-index: -1;
+  }
+}
+
+.thickWinterDiv {
+  animation-name: WinterTextFadeIn;
+  animation-duration: 2s;
+  animation-delay: 55s;
+  z-index: 13;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.lastWinterDiv {
+  animation-name: lastWinterDiv;
+  animation-duration: 2s;
+  animation-delay: 56s;
+  z-index: 13;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.thickWinterDiv p {
+  display: inline-block;
+}
+
+#thickWinter2 {
+  font-weight: 700;
+}
+
+#thickWinter4 {
+  opacity: 30%;
+}
+
+#ending1,
+#ending2,
+#ending3,
+#ending4,
+#ending5 {
+  opacity: 0;
+  position: absolute;
+  right: calc(50% + -250px);
+  width: 500px;
+  animation-name: ending-fade;
+  animation-duration: 0.8s;
+  animation-delay: 60s;
+  animation-fill-mode: forwards;
+  z-index: 14;
+  text-align: center;
+}
+
+#ending2 {
+  animation-delay: 61s;
+}
+
+#ending3 {
+  animation-delay: 62s;
+}
+
+#ending4 {
+  animation-delay: 63s;
+}
+
+#ending5 {
+  animation-delay: 64s;
+  animation-duration: 5s;
+}
+
+#ferdigda {
+  animation-name: textFadeIn;
+  animation-delay: 65s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  opacity: 0;
+}
