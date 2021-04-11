@@ -418,13 +418,13 @@
     transform: translateY(0);
   }
   100% {
-    transform: translateY(-1000px);
+    transform: translateY(-700px);
   }
 }
 
 @keyframes sunDown {
   0% {
-    transform: translateY(-1000px);
+    transform: translateY(-700px);
   }
   100% {
     transform: translateY(0);
